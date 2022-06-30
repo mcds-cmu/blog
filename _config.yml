@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: CMU MCDS
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Official Blog
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://mcds.cs.cmu.edu/sites/all/themes/mcds2015/images/mcdslogo.png
 
 #
 # Flags below are optional
@@ -47,7 +47,7 @@ url: https://mcds-cmu.github.io
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/blog-jekyll-now"
+baseurl: "/blog"
 
 #
 # !! You don't need to change any of the configuration flags below !!
