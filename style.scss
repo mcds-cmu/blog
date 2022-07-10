@@ -116,10 +116,14 @@ img {
   max-width: none;
 }
 
-.date {
-  font-style: italic;
+.attribution {
   color: $gray;
+
+  .authors, .date {
+    font-style: italic;
+  }
 }
+
 
 // Specify the color of the selection
 ::-moz-selection {

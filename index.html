@@ -12,6 +12,10 @@ layout: default
         {{ post.excerpt }}
       </div>
 
+      {% if post.authors %}
+      <div class="attribution read-more"><div class="authors"> {% include authors.html authors=post.authors %}</div></div>
+      {% endif %}
+
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More &rarr;</a>
     </article>
   {% endfor %}

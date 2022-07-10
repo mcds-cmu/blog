@@ -73,6 +73,7 @@ kramdown:
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
+# Pagination Settings
 paginate: 10
 paginate_path: "/page:num"
 
