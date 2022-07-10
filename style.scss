@@ -258,7 +258,7 @@ nav {
   }
 
   .read-more {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 15px;
   }
 }
@@ -273,6 +273,11 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+code {
+  background-color: $lightGray;
+  padding: 1px 0px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
