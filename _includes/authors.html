@@ -1,5 +1,5 @@
 {% assign authors = site.data.authors %}
-{% for author_id in page.authors %}
+{% for author_id in include.authors %}
 {% assign author = authors[author_id] %}
 <span>By: </span>
 
