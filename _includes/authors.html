@@ -1,0 +1,9 @@
+{% assign authors = site.data.authors %}
+{% for author_id in page.authors %}
+{% assign author = authors[author_id] %}
+<span>By: </span>
+
+<span>{% if author.website %}<a class="author-website" href="{{author.website}}">{{author.name}}</a>{% else
+    %}{{author.name}}{% endif %}</span>{% unless forloop.last %}<span>,</span>{% endunless %}
+
+{% endfor %}
