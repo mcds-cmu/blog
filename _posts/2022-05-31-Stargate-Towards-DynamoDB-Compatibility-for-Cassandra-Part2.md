@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Stargate - Towards DynamoDB Compatibility for Cassandra (Part 2)
+authors: [ziyanz@andrew.cmu.edu, xiangyue@andrew.cmu.edu, boxuanli@cs.cmu.edu]
 ---
 
 In my previous blog post, I introduced the Dynamo API Service, which is our project to make Apache Cassandra compatible with Amazon DynamoDB by building a middleware. In this blog post, I will share a few interesting challenges we encountered and how we tackled them.
