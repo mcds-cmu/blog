@@ -1,7 +1,6 @@
 {% assign authors = site.data.authors %}
 {% for author_email in include.authors %}
 {% assign author = authors[author_email] %}
-<span>By: </span>
 
 <span>{% if author.website %}<a class="author-website" href="{{author.website}}">{{author.name}}</a>{% else
     %}{{author.name}}{% endif %}</span>{% unless forloop.last %}<span>,</span>{% endunless %}
