@@ -265,6 +265,14 @@ nav {
     text-transform: capitalize;
     font-size: 15px;
   }
+
+  &.summary {
+    h2 {
+      a {
+        color: inherit;
+      }
+    }
+  }
 }
 
 .wrapper-footer {
@@ -288,3 +296,4 @@ code {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+@import "author-page";

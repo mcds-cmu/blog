@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="author-page">
+    <!-- Information comes here -->
+    <h1 class="author-name">{{page.name}}</h1>
+    <img class="author-image" src="{{page.photo}}" alt="{{page.name}}" width="auto" height="200">
+    
+    <div class="author-info">
+        <a class="author-email" href = "mailto: {{page.email}}">{{page.email}}</a>
+        {% if page.website %}<a class="author-webaite" href = "{{page.website}}">{{page.website}}</a>{% endif %}
+    </div>
+    
+    
+    <!-- Divider -->
+    <hr />
+    <!-- All posts by this person -->
+    <!-- TODO: Paginate -->
+    {% for post in site.posts %}
+        {% if post.authors contains page.email %}
+            {% include post_summary.html %}
+        {% endif %}
+    {% endfor %}
+</div>

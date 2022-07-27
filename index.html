@@ -4,22 +4,7 @@ layout: default
 
 <div class="posts">
   {% for post in paginator.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      {% if post.authors %}
-      <div class="attribution read-more"><div class="authors"> {% include authors.html authors=post.authors %}</div></div>
-      {% endif %}
-
-      <div class="attribution read-more">{{ post.date | date: "%B %e, %Y" }}</div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More &rarr;</a>
-    </article>
+    {% include post_summary.html %}
   {% endfor %}
 
   <!-- Pagination links -->
