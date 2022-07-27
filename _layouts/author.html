@@ -5,7 +5,9 @@ layout: default
 <div class="author-page">
     <!-- Information comes here -->
     <h1 class="author-name">{{page.name}}</h1>
+    {% if page.photo %}
     <img class="author-image" src="{{page.photo}}" alt="{{page.name}}" width="auto" height="200">
+    {% endif %}
     
     <div class="author-info">
         <a class="author-email" href = "mailto: {{page.email}}">{{page.email}}</a>
@@ -23,3 +25,4 @@ layout: default
         {% endif %}
     {% endfor %}
 </div>
+
