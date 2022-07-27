@@ -6,7 +6,7 @@ layout: default
   <h1>{{ page.title }}</h1>
   <div class="attribution">
     {% if page.authors %}
-    <div class="authors"> {% include authors.html post_authors=page.authors %}</div>
+    <div class="authors"> {% include authors.html authors=page.authors %}</div>
     {% endif %}
     <div class="date">{{ page.date | date: "%B %e, %Y" }}</div>
   </div>

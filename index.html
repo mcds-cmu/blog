@@ -13,7 +13,7 @@ layout: default
       </div>
 
       {% if post.authors %}
-      <div class="attribution read-more"><div class="authors"> {% include authors.html post_authors=post.authors %}</div></div>
+      <div class="attribution read-more"><div class="authors"> {% include authors.html authors=post.authors %}</div></div>
       {% endif %}
 
       <div class="attribution read-more">{{ post.date | date: "%B %e, %Y" }}</div>
