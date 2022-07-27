@@ -1,0 +1,20 @@
+/* author styles */
+
+.author-page {
+  h1 {
+    font-size: 24px;
+  }
+
+  .author-image {
+    border: 1px solid $steel-gray;
+    padding: 3px;
+    margin-right: 5px;
+    height: 200;
+    width: "auto";
+  }
+
+  .author-info {
+    display: flex;
+    flex-direction: column;
+  }
+}
